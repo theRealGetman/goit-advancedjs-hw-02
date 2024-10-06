@@ -25,9 +25,9 @@ label {
 }
 
 input,
-textarea {
+textarea,
+fieldset {
   outline: none;
-  width: 360px;
   padding: 8px 16px;
   font-size: 16px;
   border: 1px solid #808080;
@@ -48,11 +48,7 @@ textarea:focus {
 }
 
 input:disabled,
-input:hover,
-input:focus,
-textarea:disabled,
-textarea:hover,
-textarea:focus {
+textarea:disabled {
   background-color: #80808025;
   border-color: #808080;
   cursor: not-allowed;

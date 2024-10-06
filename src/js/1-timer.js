@@ -11,8 +11,6 @@ const hours = document.querySelectorAll('[data-hours]');
 const minutes = document.querySelectorAll('[data-minutes]');
 const seconds = document.querySelectorAll('[data-seconds]');
 
-var toast = document.querySelector('.iziToast');
-
 // Select date
 let selectedDate;
 const options = {

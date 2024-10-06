@@ -12,19 +12,28 @@
 <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <form class="feedback-form" autocomplete="off">
+    <form class="form">
         <label>
-            Email
-            <input type="email" name="email" autofocus />
+            Delay (ms)
+            <input type="number" name="delay" step="100" required />
         </label>
-        <label>
-            Message
-            <textarea name="message" rows="8"></textarea>
-        </label>
-        <button type="submit">Submit</button>
+
+        <fieldset class="state">
+            <legend>State</legend>
+            <label class="label">
+                <input type="radio" name="state" value="fulfilled" required />
+                Fulfilled
+            </label>
+            <label class="label">
+                <input type="radio" name="state" value="rejected" required />
+                Rejected
+            </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
     </form>
 
-    <script src="./js/2-form.js" type="module"></script>
+    <script src="./js/2-snackbar.js" type="module"></script>
 </body>
 
 </html>
